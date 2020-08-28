@@ -47,11 +47,12 @@
 ## 具体用法：
 
 ```python
-cookie = '...................'
-df_course, course_map = get_course(myheaders)
-course_map    # 查看
-lsltId_list = [71838977, 71838977]
-fuck_course(lsltId_list, course_map)
+cookie = 'wengine_vpn_ticket=................; refresh=1'    # ...为你自己的cookie内容
+myheaders = get_headers(cookie)    # 获取请求头
+df_course, course_map = get_course(myheaders)     # 获取待抢课程编号
+print(course_map)    # 输出course_map，根据其内容选择要抢的课程所对应的编号
+lsltId_list = [71575961, 71978271]    # 要抢的课程列表
+fuck_course(lsltId_list, course_map, myheaders)    # 开始抢课
 ```
 
 
