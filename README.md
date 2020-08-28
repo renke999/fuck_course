@@ -1,6 +1,8 @@
 # fuck_course
 
-**吉林大学抢课爬虫，吉林大学uims抢课**，基于`vpns.jlu.edu.cn`，不是`uims.jlu.edu.cn`，（两者并无差别，只是vpns可以校外登陆），所以获取cookie时必须在[vpns的教务系统](https://vpns.jlu.edu.cn/https/77726476706e69737468656265737421e5fe4c8f693a6445300d8db9d6562d/ntms/)上获取。基于vpns页面的好处是捡漏课程时可以挂在服务器上，且便于校外操作。并没有实现输入账号密码直接登陆并获取cookies，可改进，目前需要手工获取cookies。
+> **吉林大学抢课爬虫**，基于`vpns.jlu.edu.cn`，不是`uims.jlu.edu.cn`，（两者并无差别，只是vpns可以校外登陆），所以获取cookie时必须在[vpns的教务系统](https://vpns.jlu.edu.cn/https/77726476706e69737468656265737421e5fe4c8f693a6445300d8db9d6562d/ntms/)上获取。基于vpns页面的好处是捡漏课程时可以挂在服务器上，且便于校外操作。暂未实现输入账号密码直接登陆并获取cookies，可改进，目前需要手工获取cookies。仍可加入gui以及多线程进行改进。
+
+> 仅学习参考使用，不负任何责任。       By: Ke      email: deeplearning@88.com
 
 
 
