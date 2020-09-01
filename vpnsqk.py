@@ -96,11 +96,11 @@ def fuck_course(lsltId_list, course_map, myheaders):
 
 
 def main():
-    cookie = 'wengine_vpn_ticket=70046f9e784b6aa4; refresh=1'  # ...为你自己的cookie内容
+    cookie = 'wengine_vpn_ticket=33da71016633c03c; refresh=1'  # ...为你自己的cookie内容
     myheaders = get_headers(cookie)  # 获取请求头
     df_course, course_map = get_course(myheaders)  # 获取待抢课程编号
     print(course_map)  # 输出course_map，根据其内容选择要抢的课程所对应的编号
-    lsltId_list = [71576210, 72134969]
+    lsltId_list = [71576210]
     fuck_course(lsltId_list, course_map, myheaders)  # 开始抢课
 
 
