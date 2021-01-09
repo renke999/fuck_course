@@ -2,7 +2,7 @@
 
 > **吉林大学抢课爬虫**，基于`vpns.jlu.edu.cn`，不是`uims.jlu.edu.cn`，（两者并无差别，只是vpns可以校外登陆），所以获取cookie时必须在[vpns的教务系统](https://vpns.jlu.edu.cn/https/77726476706e69737468656265737421e5fe4c8f693a6445300d8db9d6562d/ntms/)上获取。基于vpns页面的好处是捡漏课程时可以挂在服务器上，且便于校外操作。暂未实现输入账号密码直接登陆并获取cookies，可改进，目前需要手工获取cookies。仍可加入gui以及多线程进行改进。
 
-> 仅学习参考使用，不负任何责任。       By: Ke      email: deeplearning@88.com
+> 仅学习参考使用 By:rk
 
 
 
@@ -73,9 +73,11 @@ fuck_course(lsltId_list, course_map, myheaders)    # 开始抢课
    }
    ```
 
-   此为get_course(myheaders)中的代码段，其中的'splanId'可能随着不同学期选课发生变化，需要自行获取，例如20年下学期2月份值为10，20年上学期7月份值为20
+   此为get_course(myheaders)中的代码段，其中的'splanId'可能随着不同学期选课发生变化，需要自行获取，例如20年下学期2月份值为10，20年上学期7月份值为20，21年1月抢课时为30
+   
+3. 抢课的提交网址经过三学期的测试发现是不变的，只有上一条中splanId会每学期发生变化，此处自己抓包修改即可。
 
-3. 附：测试用例以及部分错误
+4. 附：测试用例以及部分错误
   
     ```python
     # 测试用例以及部分错误
