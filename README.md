@@ -4,6 +4,7 @@
 **2021.3.21 新加入通过登录自动获取cookies，需要先登录vpns.jlu.edu.cn，再登录[vpns的教务系统](https://vpns.jlu.edu.cn/https/77726476706e69737468656265737421e5fe4c8f693a6445300d8db9d6562d/ntms/)，目前整体登录逻辑较为完善，包括了验证码过期及验证码失败等判断处理，其中uims登录时   需要js逆向得到编码逻辑，在代码中已体现。**
 
 > **吉林大学抢课爬虫**，基于`vpns.jlu.edu.cn`，不是`uims.jlu.edu.cn`，（两者并无差别，只是vpns可以校外登陆），所以获取cookie时必须在[vpns的教务系统](https://vpns.jlu.edu.cn/https/77726476706e69737468656265737421e5fe4c8f693a6445300d8db9d6562d/ntms/)上获取。基于vpns页面的好处是捡漏课程时可以挂在服务器上，且便于校外操作。
+
 > 仅学习参考使用 By:rk
 
 
